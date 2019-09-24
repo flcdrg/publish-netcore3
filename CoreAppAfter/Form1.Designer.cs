@@ -28,13 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnOk = new System.Windows.Forms.Button();
+            // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(275, 297);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(188, 58);
+            this.btnOk.TabIndex = 0;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.btnOk);
+            this.Name = "Form1";
+            this.Text = "Hello .NET Conf!";
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnOk;
     }
 }
 
